@@ -8,7 +8,7 @@ let intervalId = null;
 
 startButton.addEventListener('click', () => {
   startFullscreen();
-  startAnimation();
+  //startAnimation();
 });
 
 delayInput.addEventListener('input', () => {
@@ -20,8 +20,10 @@ delayInput.addEventListener('input', () => {
   }
 });
 
+var imageIndex = 0;
+
 function startAnimation() {
-  intervalId = setInterval(() => {
+  intervalId = setInterval(function() {
     const images = [
       'bench_stereoscopy.png',
       'treeflowers_stereoscopy.png',
@@ -32,9 +34,14 @@ function startAnimation() {
       'wald_zweige_stereoscopy.png'
       // add more stereoscopic images here...
     ];
-    const currentImageIndex = images.indexOf(image.src);
-    const nextImageIndex = (currentImageIndex + 1) % images.length;
-    image.src = "img/"+images[nextImageIndex];
+    if (imageIndex >= images.length) {
+      imageIndex = 0
+    };
+    var filename = "img/"+images[imageIndex];
+    //alert("Filname"+imageIndex+": '"+filename+"'");
+    console.log("Display Image "+(imageIndex + 1)+" Filename: '"+filename+"'");
+    image.src = filename;
+    imageIndex++;
   }, delayTime * 1000);
 }
 
@@ -53,3 +60,5 @@ function startFullscreen () {
     elem.msRequestFullscreen();
   }
 };
+
+startAnimation();
