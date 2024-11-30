@@ -1,7 +1,7 @@
 const startButton = document.getElementById('start-button');
 const delayInput = document.getElementById('delay-input');
 const imageContainer = document.getElementById('image-container');
-const image = document.getElementById('image');
+const image = document.getElementById('image4stereoscopy');
 
 let delayTime = 8; // default delay time in seconds
 let intervalId = null;
