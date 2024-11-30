@@ -7,6 +7,7 @@ let delayTime = 8; // default delay time in seconds
 let intervalId = null;
 
 startButton.addEventListener('click', () => {
+  startFullscreen();
   startAnimation();
 });
 
@@ -22,14 +23,14 @@ delayInput.addEventListener('input', () => {
 function startAnimation() {
   intervalId = setInterval(() => {
     const images = [
-      'stereoscopy1.jpg',
-      'stereoscopy2.jpg',
-      'stereoscopy3.jpg',
+      'bench_stereoscopy.jpg',
+      'broken_wood_stereoscopy.jpg',
+      'holzfigur_stereoscopy.jpg',
       // add more stereoscopic images here...
     ];
     const currentImageIndex = images.indexOf(image.src);
     const nextImageIndex = (currentImageIndex + 1) % images.length;
-    image.src = images[nextImageIndex];
+    image.src = "img/"+images[nextImageIndex];
   }, delayTime * 1000);
 }
 
@@ -38,6 +39,6 @@ function stopAnimation() {
   intervalId = null;
 }
 
-image.addEventListener('click', () => {
+function startFullscreen () {
   imageContainer.requestFullscreen();
-});
+};
