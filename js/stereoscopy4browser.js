@@ -23,9 +23,9 @@ delayInput.addEventListener('input', () => {
 function startAnimation() {
   intervalId = setInterval(() => {
     const images = [
-      'bench_stereoscopy.jpg',
-      'broken_wood_stereoscopy.jpg',
-      'holzfigur_stereoscopy.jpg',
+      'bench_stereoscopy.png',
+      'broken_wood_stereoscopy.png',
+      'holzfigur_stereoscopy.png',
       // add more stereoscopic images here...
     ];
     const currentImageIndex = images.indexOf(image.src);
