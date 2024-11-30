@@ -1,0 +1,2 @@
+# stereoscopy4browser
+This repository creates HTML5 WebApp (AppLSAC) for stereoscopy images created for a Wikiversity learning resource about Stereoscopy. Due to the VR headset with an inserted smartphone the stereoscopy images are displayed in fullscreen and split the screen in two halfs for left and right eye.
