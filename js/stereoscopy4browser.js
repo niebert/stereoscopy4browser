@@ -26,6 +26,7 @@ function startAnimation() {
       'bench_stereoscopy.png',
       'broken_wood_stereoscopy.png',
       'holzfigur_stereoscopy.png',
+      'wald_stereoscopy.png'
       // add more stereoscopic images here...
     ];
     const currentImageIndex = images.indexOf(image.src);
