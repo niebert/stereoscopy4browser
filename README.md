@@ -12,4 +12,4 @@ The Javascript file `js/stereoscopy4browser.js` contains the list of images that
 
 ![Stereoscopic Image](./img/bench_stereoscopy.png)
 ![Stereoscopic Image](./img/kabelrolle_stereoscopy.png)
-![Stereoscopic Image](./img/wald_zweife_stereoscopy.png)
+![Stereoscopic Image](./img/wald_zweige_stereoscopy.png)
