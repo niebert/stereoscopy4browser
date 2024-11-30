@@ -31,7 +31,7 @@ function startAnimation() {
       'broken_wood_stereoscopy.png',
       'holzfigur_stereoscopy.png',
       'kabelrolle_stereoscopy.png',
-      'wald_zweige_stereoscopy.png'
+      'treetrunc_stereoscopy.png'
       // add more stereoscopic images here...
     ];
     if (imageIndex >= images.length) {
