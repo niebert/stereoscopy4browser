@@ -1,5 +1,7 @@
 # Stereoscopy4Browser
-This repository creates HTML5 WebApp ([[AppLSAC]](https://en.wikiversity.org/wiki/AppLSAC) for stereoscopic images created for a [Wikiversity learning resource about Stereoscopy](https://en.wikiversity.org/wiki/Stereoscopy). Due to the VR headset with an inserted smartphone the stereoscopy images are displayed in fullscreen and split the screen in two halfs for left and right eye.
+This repository creates [HTML5 WebApp](https://niebert.github.io/stereoscopy4browser) as [AppLSAC](https://en.wikiversity.org/wiki/AppLSAC) for [stereoscopic](https://en.wikiversity.org/wiki/Stereoscopy) images created for a [Wikiversity learning resource about Stereoscopy](https://en.wikiversity.org/wiki/Stereoscopy). For preview use an VR headset with an inserted smartphone (see image below). The stereoscopy images are displayed in fullscreen and the VR headset uses the split the screen in two halfs for the left and right eye.
+
+Start the following [WebApp](https://niebert.github.io/stereoscopy4browser) and press the start button for the fullscreen immersive animation of stereoscopy images.
 
 <h3><a href="https://niebert.github.io/stereoscopy4browser" target="_blank">Demo of Stereoscopy Images</a></h3>
 
