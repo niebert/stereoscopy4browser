@@ -3,4 +3,4 @@ This repository creates HTML5 WebApp (AppLSAC) for stereoscopic images created f
 
 <h3><a href="https://niebert.github.io/stereoscopy4browser" target="_blank">Demo of Stereoscopy Images</a></h3>
 
-![Stereoscopic Image](./img/holzfigur_stereoscopy.png)
+![Stereoscopic Image](./img/vr_headset_with_smartphone_and_stereoscopy_image.jpg)
