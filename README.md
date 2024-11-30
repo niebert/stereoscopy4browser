@@ -19,7 +19,7 @@ function startAnimation() {
       'broken_wood_stereoscopy.png',
       'kabelrolle_stereoscopy.png',
       'holzfigur_stereoscopy.png',
-      'wald_zweige_stereoscopy.png'
+      'treetrunc_stereoscopy.png'
       // add more stereoscopic images here...
     ];
     const currentImageIndex = images.indexOf(image.src);
@@ -37,4 +37,4 @@ The following image will be shown in the [HTML5 web app](https://niebert.github.
 ![Stereoscopic Image](./img/broken_wood_stereoscopy.png)
 ![Stereoscopic Image](./img/kabelrolle_stereoscopy.png)
 ![Stereoscopic Image](./img/holzfigur_stereoscopy.png)
-![Stereoscopic Image](./img/wald_zweige_stereoscopy.png)
+![Stereoscopic Image](./img/treetrunc_stereoscopy.png)
