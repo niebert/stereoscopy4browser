@@ -8,7 +8,7 @@ Start the following [WebApp](https://niebert.github.io/stereoscopy4browser) and 
 ![Stereoscopic Image](./img/vr_headset_with_smartphone_and_stereoscopy_image.jpg)
 
 ## Javascript File
-The Javascript file `js/stereoscopy4browser.js` contains the list of images that are displayed in fullscreen immersive preview. In the function `startAnimation()`  the list of images are defined
+The Javascript file `js/stereoscopy4browser.js` contains the list of images that are displayed in [fullscreen immersive preview](https://niebert.github.io/stereoscopy4browser). In the function `startAnimation()`  the list of images are defined
 ```javascript
 function startAnimation() {
   intervalId = setInterval(() => {
