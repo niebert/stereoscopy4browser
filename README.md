@@ -30,7 +30,7 @@ function startAnimation() {
 ```
 
 ## Stereoscopy Images as Demo
-The following image will be shown in the HTML5 web app with a default time span of 8 seconds. You can adapt the time span in the web app.
+The following image will be shown in the [HTML5 web app](https://niebert.github.io/stereoscopy4browser) with a default time span of 8 seconds. You can adapt the time span in the web app.
 ![Stereoscopic Image](./img/bench_stereoscopy.png)
 ![Stereoscopic Image](./img/treeflowers_stereoscopy.png)
 ![Stereoscopic Image](./img/treeuprooted_stereoscopy.png)
