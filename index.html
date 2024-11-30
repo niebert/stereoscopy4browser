@@ -5,11 +5,13 @@
   <title>Stereoscopy4Browser - Fullscreen Image</title>
   <link rel="stylesheet" href="css/bootstrap.css">
   <style>
+  /*
     body {
       margin: 0;
       padding: 0;
       overflow: hidden;
     }
+    */
     #image-container {
       width: 100%;
       height: 100%;
@@ -24,19 +26,27 @@
 </head>
 <body>
   <h2>Stereoscopy4Browser</h2>
-  This simple HTML5 file uses the standard fullscreen mode of browsers after a mouse click to present several stereoscopic images in fullscreen mode. After starting the animation on your smartphone, please insert your mobile device into a VR headset to preview the 3D scenario. 
+  This simple HTML5 file uses the standard fullscreen mode of browsers after a mouse click to present several stereoscopic images in fullscreen mode. After starting the animation on your smartphone, please insert your mobile device into a VR headset to preview the 3D scenario.
   This repository is created for a <a href="https://en.wikiversity.org/wiki/Stereoscopy" target="_blank">Wikiversity Learning Resource about Stereoscopy</a>.
   <hr>
-  <button id="start-button">Start Animation</button> <br>
-  <input id="delay-input" type="text" placeholder="Delay time (seconds)" value="8"> seconds duration until the stereoscopy image is changed-
-  <hr>  
+  <h4>GitHub Repository</h4>
+  See <a href="https://github.com/niebert/stereoscopy4browse" target="_blank">GitHub repository</a> for the OpenSource code of the WebApp or download the WebApp as <a href="https://github.com/niebert/stereoscopy4browser/archive/refs/heads/main.zip">ZIP-file</a> from GitHub.
+  <hr>
+  <h4>Start WebApp</h4>
   <center>
-    <img src="img/vr_headset_with_smartphone_and_stereoscopy_image.jpg" width="100%">
-  </center> 
+  <h3> <button id="start-button">Start Animation</button> </h3>
+  <br>
+  <b>Delay:</b> <input id="delay-input" type="text" placeholder="Delay time (seconds)" value="8"> seconds duration until the stereoscopy image is changed-
+
+</center>
+  <hr>
+  <center>
+    <img src="img/vr_headset_with_smartphone_and_stereoscopy_image.jpg" width="50%">
+  </center>
   <hr>
   <h3>Stereoscopy Image - Preview</h3>
   <div id="image-container">
-    <img id="image4stereoscopy" src="img/bench_stereoscopy.png" alt="Stereoscopy Image Container">
+    <img id="image4stereoscopy" src="img/bench_stereoscopy.png" width="100%" alt="Stereoscopy Image Container">
   </div>
   <hr>
   <script src="js/stereoscopy4browser.js"></script>
