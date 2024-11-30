@@ -24,6 +24,7 @@ function startAnimation() {
   intervalId = setInterval(() => {
     const images = [
       'bench_stereoscopy.png',
+      'treeflowers_stereoscopy.png',
       'broken_wood_stereoscopy.png',
       'holzfigur_stereoscopy.png',
       'wald_stereoscopy.png'
