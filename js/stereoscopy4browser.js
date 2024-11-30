@@ -28,6 +28,7 @@ function startAnimation() {
       'treeuprooted_stereoscopy.png',
       'broken_wood_stereoscopy.png',
       'holzfigur_stereoscopy.png',
+      'kabelrolle_stereoscopy.png',
       'wald_zweige_stereoscopy.png'
       // add more stereoscopic images here...
     ];
