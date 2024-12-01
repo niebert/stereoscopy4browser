@@ -2,7 +2,8 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Stereoscopy4Browser - Fullscreen Image</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stereoscopic4Browser 1.0.3</title>
   <link rel="stylesheet" href="css/bootstrap.css">
   <style>
   /*
@@ -17,15 +18,60 @@
       height: 100%;
       background-color: #000;
     }
+    #imagelist-container {
+      width: 100%;
+      height: 100%;
+      background-color: #000;
+    }
     #image {
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
   </style>
+  <script type="text/javascript">
+
+    var procentage4margin = 86;
+
+    function setMarginValue(pValue) {
+      var val = procentage4margin || 86;
+      if (pValue) {
+          val = parseInt(pValue+"");
+          procentage4margin = val;
+          console.log("Margin percentage="+pValue+" was set.");
+          var el4slidval = document.getElementById("slidervalue");
+          if (el4slidval) {
+            el4slidval.innerHTML = pValue;
+          } else {
+            console.error("DOM element 'el4slidval' does not exist!");
+          }
+          setImageMargin();
+
+      } else {
+        console.error("pValue was not defined");
+      }
+    }
+
+    function setImageMargin() {
+      console.log("setImageMargin() with value="+procentage4margin+"%");
+      var scale = procentage4margin/100;
+      var divel = document.getElementById("image-container");
+      var imgel = document.getElementById("image4stereoscopy");
+      if (divel && imgel) {
+        var divwidth = divel.offsetWidth || 480;
+        console.log("DIV width="+divwidth+" detected");
+        imgel.style.width = imgel.style.width = Math.round(divwidth * scale) + 'px';
+        //el.style.width = Math.round(document.documentElement.clientWidth * .70) + 'px';
+      } else {
+        console.error("div element or image element was not defined!");
+      }
+
+    }
+
+  </script>
 </head>
 <body>
-  <h2>Stereoscopy4Browser</h2>
+  <h2>Stereoscopy4Browser <span><div id4marker="version" style="display: inline-block">1.0.3</div></span></h2>
   This simple HTML5 file uses the standard fullscreen mode of browsers after a mouse click to present several stereoscopic images in fullscreen mode. After starting the animation on your smartphone, please insert your mobile device into a VR headset to preview the 3D scenario.
   This repository is created for a <a href="https://en.wikiversity.org/wiki/Stereoscopy" target="_blank">Wikiversity Learning Resource about Stereoscopy</a>.
   <hr>
@@ -45,12 +91,34 @@
   </center>
   <hr>
   <h3>Stereoscopy Image - Preview</h3>
+  Due to the fact that VR headset for smartphones might not use the full screen for display size, please adjust the black margin of the following stereoscopic image according to your VR headset:<br>
+  <center>
+    <h3><b>Percentage Stereoscopy Image Width</b> <span id="slidervalue">86</span>%</h3>
+    <input id="marginslider" type="range" min="50" max="100" name="" value="86" onchange="setMarginValue(this.value)">
+  </center>
   <div id="image-container" style="background:#000">
     <center>
     <img id="image4stereoscopy" src="img/bench_stereoscopy.png" width="86%" alt="Stereoscopy Image Container">
   </center>
   </div>
   <hr>
+  The following stereoscopy image was created with a different aspect ratio. The aspect ratio should be selected according to screen size of smartphone display.
+  With the slide above you can adjust the margin according to used area in your VR headset.
+  <div id="imagelist-container" style="background:#000;Xdisplay:none">
+    <center>
+    <img id="image4stereoscopy" src="img/kabelrolle_stereoscopy.png" width="86%" alt="Stereoscopy Image Container">
+  </center>
+  </div>
+  <hr>
+  <center>
+    <font size="-1">
+      <b><a href="https://github.com/niebert/stereoscopy4browser/archive/master.zip">stereoscopy4browser</a></b>  is an <a href="https://en.wikiversity.org/wiki/AppLSAC" target="_blank">AppLSAC</a><br>
+      <a href="https://github.com/niebert/stereoscopy4browser" target="_blank">GitHub Repository with <kbd>stereoscopy4browser</kbd></a>
+      <br> Repository was created for <a href="https://en.wikiversity.org/wiki/Stereoscopy" target="_blank">Wikiversity Learning Resouce - Stereoscopy</a><br>
+      <a href="https://niebert.github.com/JSON2Schema" target="_blank">Create your own stereoscopy4browser with JSON2Schema</a><br>
+      Created 2024/09/24 09:12:32<br>last modified <div id4marker="datetime" style="display: inline-block">2024/12/01 11:26:31</div> - Version <div id4marker="version" style="display: inline-block">1.0.3</div>
+    </font>
+  </center>
   <script src="js/stereoscopy4browser.js"></script>
 </body>
 </html>
