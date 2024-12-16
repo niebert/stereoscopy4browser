@@ -34,6 +34,7 @@ function startAnimation() {
       'treetrunc_stereoscopy.png'
       // add more stereoscopic images here...
     ];
+    imageIndex++;
     if (imageIndex >= images.length) {
       imageIndex = 0
     };
@@ -41,7 +42,6 @@ function startAnimation() {
     //alert("Filname"+imageIndex+": '"+filename+"'");
     console.log("Display Image "+(imageIndex + 1)+" Filename: '"+filename+"'");
     image.src = filename;
-    imageIndex++;
   }, delayTime * 1000);
 }
 
